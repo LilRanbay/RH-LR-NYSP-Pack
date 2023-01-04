@@ -20,8 +20,8 @@ COMPONENT.Meta = {
 		W = 5.05,
 		H = 5.05,
 		Sprite = "sprites/emv/emv_whelen_mini_3",
-		WMult = 1,
-		Scale = .3,
+		WMult = .75,
+		Scale = .35,
 		EmitArray = {
 			Vector( -1.435, 0, 0 ),
 			Vector( 0, 0, 0 ),

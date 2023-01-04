@@ -234,6 +234,23 @@ EMV.Props = {
 		RenderGroup = RENDERGROUP_OPAQUE,
         RenderMode = RENDERMODE_NONE,
 	},
+	-- ANTI UGLY LIGHTBAR --
+	{
+		Model = "models/Photon/nysp_liberty.mdl",
+		Scale = 1.14,
+		Pos = Vector(0, -8, 67.9 ),   
+		Ang = Angle( -2, -90, 0), 
+		RenderMode = RENDERMODE_GLOW,
+		SubMaterials = {
+			[0] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+			[1] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+			[2] = "rh&lr/blank",
+			[3] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+			[4] = "rh&lr/blank",
+			[5] = "rh&lr/blank",
+			[6] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+		}
+	},
 }
 
 EMV.Auto = {
@@ -336,8 +353,8 @@ EMV.Selections = {
 	{
 		Name = "ALPR",
 		Options = {
-		    { Name = "Uninstalled", Auto = { 1,2,3,4 }, Props = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,24} },
-			{ Name = "Installed", Auto = { 1,2,3,4 }, Props = {1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,24} },
+		    { Name = "Uninstalled", Auto = { 1,2,3,4 }, Props = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,24,25} },
+			{ Name = "Installed", Auto = { 1,2,3,4 }, Props = {1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,24,25} },
 		},
 	},
 	{

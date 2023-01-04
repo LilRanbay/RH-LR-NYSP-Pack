@@ -34,7 +34,7 @@ COMPONENT.DefaultColors = {
 
 COMPONENT.SubMaterials = {
 	[0] = "rh&lr/improved_whelen_lights/glass_color/blue_glass",
-	[1] = "models/supermighty/photon/liberty_refreshed/glass_outer",
+	[1] = "rh&lr/improved_whelen_lights/glass_color/white_glass",
 	[2] = "models/supermighty/photon/liberty_refreshed/chrome",
 	[3] = "rh&lr/improved_whelen_lights/glass_color/red_glass",
 	[4] = "models/supermighty/photon/liberty_refreshed/metal",
@@ -49,7 +49,7 @@ COMPONENT.Meta = {
 		H = 8.5,
 		Sprite = "sprites_apac/emv/whelen_lin6",
 		Scale = .4,
-		WMult = 1.2,
+		WMult = .5,
 		EmitArray = {
 			Vector( 1.9, 0, 0 ),
 			Vector( 1.15, 0, 0 ),
@@ -65,7 +65,7 @@ COMPONENT.Meta = {
 		H = 16,
 		Sprite = "sprites_apac/emv/whelen_lin6_corner",
 		Scale = .4,
-		WMult = 1.2,
+		WMult = .5,
 		EmitArray = {
 			Vector( 3.2, 0, 0 ),
 			Vector( 2.15, 0, 0 ),

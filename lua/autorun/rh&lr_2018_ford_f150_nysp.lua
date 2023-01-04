@@ -170,16 +170,35 @@ EMV.Props = {
         RenderMode = RENDERMODE_NONE, 
 		SubMaterials = {[0] = "rh&lr/plates/ny/plate_nysp"}
     },
+	-- ANTI UGLY LIGHTBAR --
+	{
+		Model = "models/Photon/nysp_freedom1.mdl",
+		Scale = .95,
+		Pos = Vector( 0, 7, 89.7 ),
+		Ang = Angle( -2, 270, 0 ),
+		RenderMode = RENDERMODE_GLOW,
+		SubMaterials = {
+			[0] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+			[1] = "rh&lr/blank",
+			[2] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+			[3] = "rh&lr/blank",
+			[4] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+			[5] = "rh&lr/blank",
+			[6] = "rh&lr/blank",
+			[7] = "rh&lr/blank",
+			[8] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+		}
+	},
 }
 
 EMV.Auto = {
     {              
 		ID = "NYNYSP Whelen Freedom",                             
-		Scale = .95,                    
+		Scale = .95,
 		Pos = Vector( 0, 7, 89.7 ),
-		Ang = Angle( -2, 270, 0 ),      
+		Ang = Angle( -2, 270, 0 ),
 	},
-    {              
+    {
 		ID = "NYNYSP Whelen LINZ3",                             
 		Scale = 0.75,                    
 		Pos = Vector( 13.5, 127.5, 50  ),

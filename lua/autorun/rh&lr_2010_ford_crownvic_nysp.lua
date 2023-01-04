@@ -8,7 +8,7 @@ local A = "AMBER"
 local R = "RED"
 local G = "GREEN" 
 local DR = "D_RED" 
-local B = "BLUE"     
+local B = "BLUE"
 local W = "WHITE" 
 local CW = "C_WHITE"           
 local SW = "S_WHITE"     
@@ -323,7 +323,24 @@ EMV.Props = {
 		Ang = Angle( 20, 270, 0),
 		RenderGroup = RENDERGROUP_OPAQUE,
 		RenderMode = RENDERMODE_NONE,
-	},   
+	},
+	-- ANTI UGLY LIGHTBAR --
+	{
+		Model = "models/Photon/nysp_liberty.mdl",
+		Scale = 1.01,
+		Pos = Vector(0, -19, 65.3 ),   
+		Ang = Angle( 0, -90, 0), 
+		RenderMode = RENDERMODE_GLOW,
+		SubMaterials = {
+			[0] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+			[1] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+			[2] = "rh&lr/blank",
+			[3] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+			[4] = "rh&lr/blank",
+			[5] = "rh&lr/blank",
+			[6] = "rh&lr/improved_whelen_lights/glass_color/outside_glass",
+		}
+	},	
 }
                                                        
 EMV.Auto = {	        
@@ -381,7 +398,7 @@ EMV.Selections = {
 	{
 		Name = "Base Lighting",
 		Options = {
-		    { Name = "Installed", Auto = { 1,2,3 } },
+		    { Name = "Installed", Auto = { 1,2,3 }, Props = {32} },
 		},
 	},
 	{
